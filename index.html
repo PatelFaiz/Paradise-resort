@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/34f7d3440e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Paradise Resort</title>
+</head>
+<body>
+   <section class="showcase">
+        <!-- Resort Logo and Togel Bar -->
+        <header>
+            <h2 class="logo">Paradise Resort</h2>
+            <div class="toggle"></div>
+            <div class="menu2">
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Nearby</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Book</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+            </div>
+        </header>
+
+        <!-- Video and Overlay -->
+        <video src="resort.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+
+        <!-- Text -->
+        <div class="text">
+            <h1>Stay</h1>
+            <h3>In Paradise</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam maxime quibusdam aspernatur a sunt quaerat tenetur quia officiis quisquam ab.</p>
+            <a href="#">See Inside</a>
+        </div>
+
+        <!-- Social Media Icons -->
+        <ul class="sm">
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+   </section>
+
+   <!-- Menu -->
+   <div class="menu">
+       <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Nearby</a></li>
+           <li><a href="#">Contact</a></li>
+           <li><a href="#">Book</a></li>
+           <li><a href="#">Feedback</a></li>
+       </ul>
+   </div>
+
+   <!-- Java Script For Function -->
+   <script>
+    //    I have copied this whole js code from video because I don't know JS
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+   </script>
+
+</body>
+</html>

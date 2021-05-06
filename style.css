@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.showcase header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.menu2 ul{
+    display: flex;    
+}
+.menu2 ul li{
+    margin-right: 20px;
+    list-style: none;
+}
+
+.menu2 ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s;
+}
+.menu2 ul li a:hover{
+    background: #fff;
+    color:#6ad5ff;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+
+
+
+.toggle.active{
+    background: url('Close.png') no-repeat center;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+.showcase.active{
+    right: 200px;
+
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu ul{
+    position: relative;
+    list-style:none;
+    text-align: center;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #111;
+    text-transform: uppercase;
+    
+}
+
+.menu ul li a:hover{
+    color: #6ad5ff;
+}
+
+.menu ul li{
+    margin-bottom: 15px;
+    
+}
+
+.showcase video{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.text{
+    position: relative;
+    z-index: 10;
+}
+
+.overlay{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    background: #f2ff80;
+    opacity: 0.3;
+    mix-blend-mode:overlay;
+}
+
+.text h1{
+    text-transform: uppercase;
+    font-size: 5em;
+    line-height: 1em;
+    font-weight: 800;
+    /* text-shadow: 0px 10px 8px rgba(0,0, 0, 0.7); */
+}
+
+.text h3{
+    text-transform: uppercase;
+    font-size: 4em;
+    line-height: 1em;
+    font-weight: 600;
+}
+
+.text p{
+    font-weight: 500;
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 20px 0px;
+}
+
+.text a{
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #111;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+
+}
+
+.text a:hover{
+    letter-spacing: 6px;
+}
+
+.sm{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sm li{
+    list-style: none;
+}
+
+.sm li a{
+    display:inline-block;
+    color: white;
+    margin-right: 20px;
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.sm li a:hover{
+    transform: scale(1) translateY(-10px);
+}
+
+@media(max-width: 900px){
+    .showcase, 
+    .showcase header{
+        padding: 40px;
+    }
+
+    .menu2{
+        display: none;
+    }
+    .toggle{
+        position: relative;
+        width: 60px;
+        height: 60px;
+        background: url('Menu.png') no-repeat center;
+        background-size: 30px;
+        /* background: url("https://img.icons8.com/ios-filled/26/ffffff/menu--v1.png") no-repeat center center; */
+        cursor: pointer;
+    }
+
+    .text h1{
+        font-size: 3em;
+    }
+    .text h3{
+        font-size: 2em;
+    }
+    .text p{
+        font-weight: 400;
+    }
+    .text a{
+        display: inline-block;
+        font-size: 0.9em;
+        background: #fff;
+        text-decoration: none;
+        padding: 8px 25px;
+        color: #111;
+        margin-top: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.3s;
+    
+    }
+    .text a:hover{
+        letter-spacing: 6px;
+    }
+}
+
